@@ -4,20 +4,25 @@ function newOnClickDocumentLink(event) {
 	const viewJournal = event.ctrlKey && game.settings.get("scene-link-view", "ctrlJournal");
 	const viewScene = game.user.isGM || ( this.ownership["default"] == 2 && game.settings.get("scene-link-view", "playerView") );
 	
-	if ( activateScene ) {
-		game.scenes.get(this._id).activate();
-		return;
+	if ( this.uuid.startsWith("Compendium") ) {
+		ui.notifications.warn("SCENE_LINK_VIEW.WARNING.compendium", {localize: true});
+		return
 	}
-		
+	
 	if ( viewJournal ) {
 		if ( !this.journal ) {
 			ui.notifications.warn("SCENE_LINK_VIEW.WARNING.noJournal", {localize: true, console: false});
 			return
 		} else return this.journal._onClickDocumentLink(event)
 	}
-		
+	
+	if ( activateScene ) {
+		game.scenes.get(this._id).activate();
+		return;
+	}
+
 	if ( viewScene ) {
-		game.scenes.get(this._id).view();
+		game.scenes.get(this.id).view();
 		return;
 	}
 	
