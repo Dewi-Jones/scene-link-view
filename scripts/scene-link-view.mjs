@@ -6,18 +6,18 @@ function newOnClickDocumentLink(event) {
 	
 	if ( this.uuid.startsWith("Compendium") ) {
 		ui.notifications.warn("SCENE_LINK_VIEW.WARNING.compendium", {localize: true});
-		return
+		return;
 	}
 	
 	if ( viewJournal ) {
 		if ( !this.journal ) {
 			ui.notifications.warn("SCENE_LINK_VIEW.WARNING.noJournal", {localize: true, console: false});
-			return
+			return;
 		} else return this.journal._onClickDocumentLink(event)
 	}
 	
 	if ( activateScene ) {
-		game.scenes.get(this._id).activate();
+		game.scenes.get(this.id).activate();
 		return;
 	}
 

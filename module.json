@@ -16,7 +16,7 @@
     }
   ],
   "flags": {
-    "canUpload": true
+    "canUpload": false
   },
   "esmodules": [
     "scripts/scene-link-view.mjs"
@@ -28,5 +28,5 @@
       "path": "lang/en.json"
     }
   ],
-  "description": "A system agnostic module that enables you to view or activate a scene when clicking a scene document link, instead of opening it's configuration."
+  "description": "A system agnostic module that enables you to view or activate a scene when clicking a scene document link, instead of opening its configuration."
 }

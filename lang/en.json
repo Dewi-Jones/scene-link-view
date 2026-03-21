@@ -1,15 +1,17 @@
 {
-	"SCENE_LINK_VIEW.SETTINGS.shiftActivate": {
-		"name": "Shift Key Activate",
-		"hint": "When enabled, holding shift when clicking a scene link activates the scene."
-	},
-	"SCENE_LINK_VIEW.SETTINGS.ctrlJournal": {
-		"name": "Control Key Journal",
-		"hint": "When enabled, holding control when clicking a scene link opens the journal."
-	},
-	"SCENE_LINK_VIEW.SETTINGS.playerView": {
-		"name": "Player View",
-		"hint": "Allows players to view a scene by clicking a scene document link. Requires the scene to be available to all players in the navigation bar."
+	"SCENE_LINK_VIEW.SETTINGS": {
+		"shiftActivate": {
+			"name": "Shift Key Activate",
+			"hint": "When enabled, holding shift when clicking a scene link activates the scene."
+		},
+		"ctrlJournal": {
+			"name": "Control Key Journal",
+			"hint": "When enabled, holding control when clicking a scene link opens the journal."
+		},
+		"playerView": {
+			"name": "Player View",
+			"hint": "Allows players to view a scene by clicking a scene document link. Requires the scene to be available to all players in the navigation bar."
+		}
 	},
 	"SCENE_LINK_VIEW.WARNING": {
 		"noView": "Scene Link View: You are not allowed to view the scene. Sorry :(",
