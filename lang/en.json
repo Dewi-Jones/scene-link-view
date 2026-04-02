@@ -8,6 +8,10 @@
 			"name": "Control Key Journal",
 			"hint": "When enabled, holding control when clicking a scene link opens the journal."
 		},
+		"altConfig": {
+			"name": "Alt Key Config",
+			"hint": "When enabled, holding alt when clicking a scene link opens the configuration."
+		},
 		"playerView": {
 			"name": "Player View",
 			"hint": "Allows players to view a scene by clicking a scene document link. Requires the scene to be available to all players in the navigation bar."
