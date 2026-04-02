@@ -3,7 +3,8 @@ With this module, clicking a Scene Document Link (e.g. `@UUID[Scene.cRYvlQbTdIYL
 **Modifier Keys**
 
 When holding `SHIFT` while clicking a Scene Document Link, the scene will be activated (GM only, can be disabled via a setting).
-When holding `CTRL` while clicking a Scene Document Link, the Journal will be opened (provided there is one, can be disabled via a setting).
+When holding `CTRL` while clicking a Scene Document Link, the journal will be opened (provided there is one, can be disabled via a setting).
+When holding `ALT` while clicking a Scene Document Link, the configuration will be opened (can be disabled via a setting).
 
 **Player View**
 
